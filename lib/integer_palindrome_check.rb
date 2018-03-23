@@ -18,14 +18,6 @@ def is_palindrome(number)
 
   until front >= back
 
-    while digits[front] == " "
-      front += 1
-    end
-
-    while digits[back] == " "
-      back -= 1
-    end
-
     return false if digits[front] != digits[back]
 
     front += 1
